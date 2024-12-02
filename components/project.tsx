@@ -33,14 +33,14 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20" id="projects">
-        <div className=" pb-7 px-2 sm:pl-10 sm:pr-2 pt-10 max-w-[55%] flex flex-col h-full sm:group-even:ml-[18rem] group-even:ml-[30vw] max-sm:ml-1">
+        <div className=" pb-7 px-2 sm:pl-10 sm:pr-2 py-10 sm:py-6 max-w-[55%] flex flex-col h-full sm:group-even:ml-[18rem] group-even:ml-[30vw] max-sm:ml-1">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 ">
             {description}
           </p>
-          {(github !== null || buttonLink !== null) && (
-            <div className="flex flex-row justify-center items-center gap-4 mb-2 mt-3">
-              {buttonLink !== null && (
+          {(github  || buttonLink ) && (
+            <div className="flex flex-wrap justify-center items-center gap-4 mb-2 mt-3">
+              {buttonLink  && (
                 <a
                   href={buttonLink}
                   className="mt-1 px-3 py-1 bg-blue-500 text-white rounded-2xl hover:bg-blue-600 flex flex-row cursor-pointer"
@@ -69,10 +69,10 @@ export default function Project({
                   </svg>
                 </a>
               )}
-              {github !== null && (
+              {github  && (
                 <a
                   href={github}
-                  className="mt-1 px-6 py-1 bg-white text-black rounded-2xl hover:bg-black hover:text-white flex flex-row cursor-pointer"
+                  className="mt-1 px-6 py-1 bg-white text-black rounded-2xl hover:bg-black hover:text-white flex flex-row cursor-pointer border border-gray-500"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
