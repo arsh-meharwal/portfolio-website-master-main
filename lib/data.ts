@@ -48,17 +48,17 @@ export const experiencesData = [
     title: "Full-Stack Web Developer",
     location: "Ericsson, Noida",
     description:
-      "I worked as a Full-Stack developer for 1.5 years in Discover FLOW Project for the main website. I specialized in MERN Stack.",
+      "I worked as a Full-Stack developer for in Discover FLOW Project for the main website. I specialized in MERN Stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "12/2021 - 07/2022",
+    date: "12/2021 - 07/2023",
   },
   {
     title: "Full Stack Mobile Developer",
     location: "Ericsson, Noida",
     description:
-      "I'm now a React-Native Mobile developer working for the same project for the mobile app FLOW Self Care.",
+      "Worked as React-Native Mobile developer working for the same project for the mobile app FLOW Self Care.",
     icon: React.createElement(FaReact),
-    date: "07/2022 - present",
+    date: "07/2023 - present",
   },
 ] as const;
 
@@ -87,12 +87,12 @@ export const projectsData = [
       "An E-Commerce Android/iOS app that I deployed for my client, a famous YouTuber 'Microwave Nagal'.",
     tags: ["React-Native", "Appwrite", "Nativewind", "Razorpay"],
     imageUrl: max,
-    buttonLink: null,
+    buttonLink: "https://play.google.com/store/apps/details?id=com.anonymous.ecommerce",
     github: "https://github.com/arsh-meharwal/Maxmol",
   },
   
   {
-    title: "MovieBazz",
+    title: "Moviebaaz",
     description:
       "Delve into world of cinema. Get daily trending Movies / Shows, top rated content of all time and more",
     tags: ["React-Native", "AppWrite", "NativeWind", "React"],
